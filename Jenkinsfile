@@ -76,7 +76,7 @@ pipeline {
         stage('Restart Gunicorn') {
             steps {
                 sh '''
-                sudo systemctl restart poetry_django
+                sudo systemctl restart poetry_django.service
                 '''
             }
         }
