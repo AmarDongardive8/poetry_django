@@ -49,7 +49,7 @@ pipeline {
                 sh '''
                 export PATH="$POETRY_BIN:$PATH"
                 cd $RELEASE_DIR
-                poetry install --no-interaction --no-root
+                poetry install
                 '''
             }
         }
