@@ -7,7 +7,7 @@ pipeline {
     environment {
         APP_DIR = "/srv/poetry_django"
         RELEASE_DIR = "${APP_DIR}/releases/${BUILD_ID}"
-        POETRY_BIN = "$HOME/.local/bin"
+        POETRY_BIN = "/var/lib/jenkins/.local/bin"
     }
 
     stages {
